@@ -1230,6 +1230,8 @@ git init
 git add .
 git commit -m "Initial commit"
 
+git branch -M main # branch umbenennen
+
 git remote add origin https://github.com/ugurat/ASP.NET-Core-Web-API-SQLite2.git
 
 git push -u origin main
@@ -1248,6 +1250,15 @@ git:https://github.com oder Ähnliches.
 
 Eintrag löschen und erneut versuchen: 
 
+git push -u origin main
+````
+
+  
+Aktualisieren
+
+````
+git add .
+git commit -m "aktualisiert"
 git push -u origin main
 ````
 
