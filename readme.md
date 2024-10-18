@@ -11,6 +11,7 @@ Um ein Inhaltsverzeichnis für das vorhandene Dokument zu erstellen, können wir
 ### Inhaltsverzeichnis
 
 - [ASP.NET Core Web API mit SQLite (Grundlagen)](#aspnet-core-web-api-mit-sqlite-grundlagen)
+    - [Inhaltsverzeichnis](#inhaltsverzeichnis)
 - [Projekt](#projekt)
   - [Ziel und Anforderungen](#ziel-und-anforderungen)
   - [Anforderungen:](#anforderungen)
@@ -53,15 +54,18 @@ Um ein Inhaltsverzeichnis für das vorhandene Dokument zu erstellen, können wir
       - [6. Benutzer anhand der E-Mail abrufen](#6-benutzer-anhand-der-e-mail-abrufen)
       - [7. Passwort überprüfen](#7-passwort-überprüfen)
   - [Ergebnis](#ergebnis)
+  - [WeatherForecast Entfernen](#weatherforecast-entfernen)
   - [Installation, Deployment](#installation-deployment)
     - [1. **Datenbank einrichten (DB-First Ansatz)**](#1-datenbank-einrichten-db-first-ansatz)
+      - [Schritte zur Einrichtung der Datenbank:](#schritte-zur-einrichtung-der-datenbank)
     - [2. API und Webseite veröffentlichen](#2-api-und-webseite-veröffentlichen)
+      - [API in Visual Studio 2022 veröffentlichen:](#api-in-visual-studio-2022-veröffentlichen)
     - [3. Konfiguration](#3-konfiguration)
   - [API Konfiguration](#api-konfiguration)
   - [Zugangsdaten](#zugangsdaten)
+  - [Git Konto wechseln und commiten](#git-konto-wechseln-und-commiten)
   - [Hinweise](#hinweise)
   - [Entwickler](#entwickler)
-[Zurück zum Inhaltsverzeichnis](#top)
 
 -----
 
@@ -1217,6 +1221,40 @@ Benutzer Zugangsdaten checken
   [Zurück zum Inhaltsverzeichnis](#top)
 
 ---
+
+## Git Konto wechseln und commiten
+
+```` 
+git init
+
+git add .
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/ugurat/ASP.NET-Core-Web-API-SQLite2.git
+
+git push -u origin main
+````
+
+Falls Fehler:
+
+````
+PASSWORT LÖSCHEN und ERNEUT ANMELDEN
+
+Gehe zu "Windows-Anmeldeinformationen": 
+Unter Windows-Anmeldeinformationen "gespeicherte Zugangsdaten für Webseiten und Anwendungen" finden.
+
+Suche nach gespeicherten GitHub-Einträgen: 
+git:https://github.com oder Ähnliches.
+
+Eintrag löschen und erneut versuchen: 
+
+git push -u origin main
+````
+
+  [Zurück zum Inhaltsverzeichnis](#top)
+  
+---
+
 
 ## Hinweise
 - Die API verwendet den DbContext `MeineDbContext`, um auf die SQLite-Datenbank zuzugreifen.
